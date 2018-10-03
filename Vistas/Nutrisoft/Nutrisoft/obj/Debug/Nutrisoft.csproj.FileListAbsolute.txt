@@ -29,3 +29,6 @@ C:\Users\LD\Documents\Proyecto\GitHub\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\obj\D
 C:\Users\Ivan\Desktop\Proyecto\Vistas\Nutrisoft\Nutrisoft\bin\Debug\Nutrisoft.exe.config
 C:\Users\Ivan\Desktop\Proyecto\Vistas\Nutrisoft\Nutrisoft\obj\Debug\Nutrisoft.exe
 C:\Users\Ivan\Desktop\Proyecto\Vistas\Nutrisoft\Nutrisoft\obj\Debug\Nutrisoft.pdb
+C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\bin\Debug\Nutrisoft.exe.config
+C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\obj\Debug\Nutrisoft.exe
+C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\obj\Debug\Nutrisoft.pdb
