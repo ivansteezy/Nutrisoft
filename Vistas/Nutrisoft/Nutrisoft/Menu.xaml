@@ -1,0 +1,68 @@
+﻿<Window x:Class="Nutrisoft.Menu"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nutrisoft"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="577" Width="932" WindowState="Normal" WindowStyle="None" AllowsTransparency="False" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid>
+            <Border  Background="Transparent" MouseLeftButtonDown="Mover">
+                <materialDesign:ColorZone  Background="#81c41d">
+                    <DockPanel HorizontalAlignment="Right">
+                        <Button Height="40" Width="40" Padding="0" Background="#81c41d" Click="MinimizarVentana">
+                            <materialDesign:PackIcon Kind="WindowMinimize"/>
+                        </Button>
+                        <Button Height="40" Width="40" Padding="0" Background="#81c41d" Click="Restaurar">
+                            <materialDesign:PackIcon Kind="WindowRestore"/>
+                        </Button>
+                        <Button Height="40" Width="40"  Padding="0" Background="#81c41d" Click="CerrarVentana">
+                            <materialDesign:PackIcon Kind="WindowClose"/>
+                        </Button>
+                    </DockPanel>
+                </materialDesign:ColorZone>
+            </Border>
+        </Grid>
+        
+            
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="40">
+                    <Menu Background="#a8ed42">
+                        <MenuItem Header="Evaluacion nutricional">
+                            <MenuItem Header="Historial del paciente" Click="HistorialPaciente"/>
+                            <MenuItem Header="Alimentacion" Click="Alimentacion">
+                                <MenuItem Header="Recordatorio 24h" Click="Recordatorio24h"></MenuItem>
+                                <MenuItem Header="Antecedentes dieteticos" Click="AntecedentesDieteticos"></MenuItem>
+                            </MenuItem>
+                            <MenuItem Header="Medidas antropomórficas" Click="MedidasAntropometricas"/>
+                            <MenuItem Header="Datos bioquimicos" Click="DatosBioquimicos"/>
+                            <MenuItem Header="Hallazgos físicos" Click="HallazgosFisicos"/>
+                        </MenuItem>
+
+                        <MenuItem Header="Diagnostico Nutricional" Click="DiagnosticoNutricional"/>
+
+                        <MenuItem Header="Tratamiento nutricional">
+                            <MenuItem Header="Requerimientos" Click="Requerimientos"/>
+                            <MenuItem Header="Distribucion" Click="Distribucion"/>
+                            <MenuItem Header="Tiempos" Click="Tiempos"/>
+                        </MenuItem>
+
+                        <MenuItem Header="Expedientes" Click="Expedientes"/>
+                        <MenuItem Header="Notificaciones" Click="Notificaciones"/>
+                    </Menu>
+                </StackPanel>
+        <Grid Margin="0 90 0 0">
+            <Frame x:Name="MainFrame">
+                
+            </Frame>
+            </Grid>
+        
+    </Grid>
+</Window>
