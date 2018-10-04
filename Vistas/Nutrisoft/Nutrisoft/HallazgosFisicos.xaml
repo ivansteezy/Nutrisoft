@@ -9,7 +9,10 @@
       Title="HallazgosFisicos">
 
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="121,147,0,0" VerticalAlignment="Top" Width="75"/>
+
+
+        <Label x:Name="Descripcion" Margin="173,246,21,20">Aparencia General</Label>
+
 
     </Grid>
 </Page>

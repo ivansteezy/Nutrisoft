@@ -80,7 +80,7 @@ namespace Nutrisoft
 
         private void HallazgosFisicos(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new HallazgosFisicos();
         }
 
         private void DiagnosticoNutricional(object sender, RoutedEventArgs e)

@@ -59,7 +59,7 @@
                     </Menu>
                 </StackPanel>
         <Grid Margin="0 90 0 0">
-            <Frame x:Name="MainFrame">
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden">
                 
             </Frame>
             </Grid>
