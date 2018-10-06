@@ -55,7 +55,7 @@ namespace Nutrisoft
 
         private void Alimentacion(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new AntecedentesDieteticos();
+            
         }
 
         private void Recordatorio24h(object sender, RoutedEventArgs e)
@@ -65,7 +65,7 @@ namespace Nutrisoft
 
         private void AntecedentesDieteticos(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new AntecedentesDieteticos();
         }
 
         private void MedidasAntropometricas(object sender, RoutedEventArgs e)
@@ -75,7 +75,7 @@ namespace Nutrisoft
 
         private void DatosBioquimicos(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new DatosBioquimicos();
         }
 
         private void HallazgosFisicos(object sender, RoutedEventArgs e)
