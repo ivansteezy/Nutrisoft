@@ -33,7 +33,7 @@
         </Grid>
         
             
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="40">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 40 0 0">
                     <Menu Background="#a8ed42">
                         <MenuItem Header="Evaluacion nutricional">
                             <MenuItem Header="Historial del paciente" Click="HistorialPaciente"/>
