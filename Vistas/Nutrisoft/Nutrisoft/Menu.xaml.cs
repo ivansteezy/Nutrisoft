@@ -50,7 +50,7 @@ namespace Nutrisoft
         //Aqui se asignaran al evento de click las respectivas paginas de cada vista
         private void HistorialPaciente(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new HistorialPaciente();
+            MainFrame.Content = new HistorialPaciente();                                                            
         }
 
         private void Alimentacion(object sender, RoutedEventArgs e)
