@@ -25,8 +25,8 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Width="359" Margin="30,30,210,30">
-                <CheckBox x:Name="Masculino" Margin="0" Content="Masculino" Background="Black"/>
-                <CheckBox x:Name = "Femenino" Margin="120 0" Content="Femenino" Background="Black"/>
+                <RadioButton x:Name="Masculino" Margin="0" Content="Masculino" Background="Black"/>
+                <RadioButton x:Name = "Femenino" Margin="120 0" Content="Femenino" Background="Black"/>
             </StackPanel>
 
             <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0, 20" Width="449">
@@ -39,26 +39,26 @@
 
         <StackPanel Margin="656,0,408,0">
             <TextBlock Width="300" FontSize="25" Margin="0 20 0 50" HorizontalAlignment="Left">Enfermedades patológicas.</TextBlock>
-            <RadioButton FontSize="20" Margin="30 0 0 40">Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40">Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
         </StackPanel>
 
         <StackPanel VerticalAlignment="Top" Width="350" Height="610" Margin="1028,0,43, 0">
             <TextBlock Width="350" FontSize="25" Margin="0 20 0 50">Enfermedades no patológicas.</TextBlock>
-            <RadioButton FontSize="20" Margin="30 0 0 40">Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40">Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
-            <RadioButton FontSize="20" Margin="30 0 0 40" >Cardio vasculares</RadioButton>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
+            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
         </StackPanel>
         <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
     </Grid>

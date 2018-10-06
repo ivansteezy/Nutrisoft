@@ -47,8 +47,8 @@
                 </StackPanel>
                 <DockPanel>
                     <StackPanel Orientation="Vertical" Margin="0,20,225,20" HorizontalAlignment="Left" Width="200">
-                        <CheckBox x:Name="Masculino" Margin="38 10" Content="Masculino" Background="Black" Click="Masculino_Click"/>
-                        <CheckBox x:Name = "Femenino" Margin="38 0" Content="Femenino" Background="Black" Click="Femenino_Click"/>
+                        <RadioButton x:Name="Masculino" Margin="38 10" Content="Masculino" Background="Black"/>
+                        <RadioButton x:Name = "Femenino" Margin="38 0" Content="Femenino" Background="Black"/>
                     </StackPanel>
 
                     <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="-235,0,15,0" Width="170" Height="42">

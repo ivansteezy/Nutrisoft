@@ -10,28 +10,30 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Nutrisoft
 {
     /// <summary>
-    /// Interaction logic for Registro.xaml
+    /// Interaction logic for AntecedentesDieteticos.xaml
     /// </summary>
-    public partial class Registro : Window
+    public partial class AntecedentesDieteticos : Page
     {
-        public Registro()
+        public AntecedentesDieteticos()
         {
             InitializeComponent();
         }
 
-        private void Mover(object sender, MouseButtonEventArgs e)
+        private void AgregarAlergias(object sender, RoutedEventArgs e)
         {
-            DragMove();
+            AlergiasGrid.Items.Add(new { Alergias = txt_Alergias.Text});
+            txt_Alergias.Clear();
         }
 
-        private void Cerrar(object sender, RoutedEventArgs e)
+        private void EliminarAlergias(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            //Encontrar metodo para eliminar elementos del data grid
         }
     }
 }
