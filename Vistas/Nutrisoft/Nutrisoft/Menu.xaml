@@ -12,7 +12,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nutrisoft"
         mc:Ignorable="d"
-        Title="MainWindow" Height="577" Width="932" WindowState="Normal" WindowStyle="None" AllowsTransparency="False" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="577" Width="932" WindowState="Maximized" WindowStyle="None" AllowsTransparency="False" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid>
             <Border  Background="Transparent" MouseLeftButtonDown="Mover">
