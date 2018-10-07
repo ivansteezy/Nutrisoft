@@ -69,6 +69,12 @@
     <Compile Include="DatosBioquimicos.xaml.cs">
       <DependentUpon>DatosBioquimicos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DiagnosticoNutricional.xaml.cs">
+      <DependentUpon>DiagnosticoNutricional.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Distribucion.xaml.cs">
+      <DependentUpon>Distribucion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HistorialPaciente.xaml.cs">
       <DependentUpon>HistorialPaciente.xaml</DependentUpon>
     </Compile>
@@ -86,6 +92,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DatosBioquimicos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DiagnosticoNutricional.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Distribucion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

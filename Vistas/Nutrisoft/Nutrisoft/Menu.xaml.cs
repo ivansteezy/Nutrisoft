@@ -85,7 +85,7 @@ namespace Nutrisoft
 
         private void DiagnosticoNutricional(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new DiagnosticoNutricional();
         }
 
         private void Requerimientos(object sender, RoutedEventArgs e)
@@ -95,7 +95,7 @@ namespace Nutrisoft
 
         private void Distribucion(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new Distribucion();
         }
 
         private void Tiempos(object sender, RoutedEventArgs e)

@@ -1,0 +1,85 @@
+﻿<Page x:Class="Nutrisoft.Distribucion"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Nutrisoft"
+      mc:Ignorable="d"
+      Title="HistorialPaciente">
+
+    <Grid Height="765" Width="1421">
+        <TextBlock Margin="20,0,1173,704" FontSize="30">-Distribución</TextBlock>
+        <StackPanel Orientation="Horizontal" Height="300" Width="650" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60 100"> 
+            <StackPanel Width="300" Margin="0 0 40 0">
+                <TextBlock FontSize="25" HorizontalAlignment="Center">Distribución</TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 30">
+                    <TextBlock Margin="65 0">%</TextBlock>
+                    <TextBlock Margin="15 0">Kcal</TextBlock>
+                    <TextBlock Margin="70 0">Gr</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 7">
+                    <TextBlock Margin="-1 0 25 0" VerticalAlignment="Center">PS</TextBlock>
+                    <RichTextBox Height="30" Width="40" Margin="15 0 55 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 20">
+                    <TextBlock Margin="0 0 43 0" VerticalAlignment="Center">LP</TextBlock>
+                    <RichTextBox Height="30" Width="40" Margin="-4 0 55 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 10">
+                    <TextBlock Margin="0 0 16 0" VerticalAlignment="Center">HC</TextBlock>
+                    <RichTextBox Height="30" Width="40" Margin="18 0 55 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="0,0,0,62" Width="300">
+                <TextBlock FontSize="25" HorizontalAlignment="Center">Adecuación</TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 30">
+                    <TextBlock Margin="65 0">PS</TextBlock>
+                    <TextBlock Margin="15 0">LP</TextBlock>
+                    <TextBlock Margin="70 0">HC</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 7">
+                    <TextBlock Margin="-1 0 15 0" VerticalAlignment="Center">Reg</TextBlock>
+                    <RichTextBox Height="30" Width="40" Margin="15 0 55 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 20">
+                    <TextBlock Margin="0 0 15 0" VerticalAlignment="Center">Obten.</TextBlock>
+                    <RichTextBox Height="30" Width="40" Margin="-4 0 55 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 10">
+                    <TextBlock Margin="0 0 15 0" VerticalAlignment="Center">%A</TextBlock>
+                    <RichTextBox Height="30" Width="40" Margin="18 0 55 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
+                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="100 0 0 350" Width="600">
+            <TextBlock HorizontalAlignment="Center" FontSize="25">Tipo de comida.</TextBlock>
+            <DataGrid x:Name="TipoDeComida">
+               
+            </DataGrid>
+        </StackPanel>
+        <StackPanel Width="500" Height="650" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <TextBlock HorizontalAlignment="Center" FontSize="25">Tipo de comida.</TextBlock>
+        </StackPanel>
+        
+        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
+    </Grid>
+</Page>
