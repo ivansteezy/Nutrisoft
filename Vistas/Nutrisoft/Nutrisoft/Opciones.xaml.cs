@@ -33,5 +33,24 @@ namespace Nutrisoft
         {
             Application.Current.Shutdown();
         }
+
+        private void Dietas(object sender, MouseButtonEventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Close();
+        }
+
+        private void Pacientes(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Cita(object sender, MouseButtonEventArgs e)
+        {
+            Citas citas = new Citas();
+            citas.Show();
+            this.Close();
+        }
     }
 }

@@ -17,7 +17,7 @@
     <Grid Height="765" Width="1421">
         <TextBlock Margin="20,0,1173,704" FontSize="30">-Distribución</TextBlock>
         <StackPanel Orientation="Horizontal" Height="300" Width="650" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60 100"> 
-            <StackPanel Width="300" Margin="0 0 40 0">
+            <StackPanel Width="300" Margin="0,0,50,62">
                 <TextBlock FontSize="25" HorizontalAlignment="Center">Distribución</TextBlock>
                 <StackPanel Orientation="Horizontal" Margin="0 10 0 30">
                     <TextBlock Margin="65 0">%</TextBlock>
@@ -27,22 +27,23 @@
                 <StackPanel Orientation="Horizontal" Margin="0 0 0 7">
                     <TextBlock Margin="-1 0 25 0" VerticalAlignment="Center">PS</TextBlock>
                     <RichTextBox Height="30" Width="40" Margin="15 0 55 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                    <TextBlock x:Name="Ps_Kcal" Height="30" Width="40" Margin="0 0 50 0"></TextBlock>
+                    <TextBlock x:Name="Ps_Gr" Height="30" Width="40" Margin="15 0 0 0"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0 20">
                     <TextBlock Margin="0 0 43 0" VerticalAlignment="Center">LP</TextBlock>
                     <RichTextBox Height="30" Width="40" Margin="-4 0 55 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                    <TextBlock x:Name="Lp_Kcal" Height="30" Width="40" Margin="0 0 50 0"></TextBlock>
+                    <TextBlock x:Name="Lp_Gr" Height="30" Width="40" Margin="15 0 0 0"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0 10">
                     <TextBlock Margin="0 0 16 0" VerticalAlignment="Center">HC</TextBlock>
                     <RichTextBox Height="30" Width="40" Margin="18 0 55 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                    <TextBlock x:Name="Hc_Kcal" Height="30" Width="40" Margin="0 0 50 0"></TextBlock>
+                    <TextBlock x:Name="Hc_Gr" Height="30" Width="40" Margin="15 0 0 0"></TextBlock>
                 </StackPanel>
             </StackPanel>
+
             <StackPanel Margin="0,0,0,62" Width="300">
                 <TextBlock FontSize="25" HorizontalAlignment="Center">Adecuación</TextBlock>
                 <StackPanel Orientation="Horizontal" Margin="0 10 0 30">
@@ -51,22 +52,23 @@
                     <TextBlock Margin="70 0">HC</TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0 0 0 7">
-                    <TextBlock Margin="-1 0 15 0" VerticalAlignment="Center">Reg</TextBlock>
-                    <RichTextBox Height="30" Width="40" Margin="15 0 55 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                    <TextBlock Margin="-1 0 22 0" VerticalAlignment="Center">Reg</TextBlock>
+                    <TextBlock x:Name="Reg_Ps" Height="30" Width="40" Margin="15 0 55 0"></TextBlock>
+                    <TextBlock x:Name="Reg_Lp" Height="30" Width="40" Margin="0 0 50 0"></TextBlock>
+                    <TextBlock x:Name="Reg_Hc" Height="30" Width="40" Margin="15 0 0 0"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0 20">
-                    <TextBlock Margin="0 0 15 0" VerticalAlignment="Center">Obten.</TextBlock>
-                    <RichTextBox Height="30" Width="40" Margin="-4 0 55 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+                    <TextBlock Margin="0 0 20 3" VerticalAlignment="Top">Obten.</TextBlock>
+                    <TextBlock x:Name="Ob_Ps" Height="30" Width="40" Margin="-2 0 55 0"></TextBlock>
+                    <TextBlock x:Name="Ob_Lp" Height="30" Width="40" Margin="0 0 50 0"></TextBlock>
+                    <TextBlock x:Name="Ob_Hc" Height="30" Width="40" Margin="15 0 0 0"></TextBlock>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="0 10">
-                    <TextBlock Margin="0 0 15 0" VerticalAlignment="Center">%A</TextBlock>
-                    <RichTextBox Height="30" Width="40" Margin="18 0 55 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="0 0 50 0"></RichTextBox>
-                    <RichTextBox Height="30" Width="40" Margin="15 0 0 0"></RichTextBox>
+
+                <StackPanel Orientation="Horizontal" Margin="0 10" >
+                    <TextBlock Margin="0 0 20 0" VerticalAlignment="Top">%A</TextBlock>
+                    <TextBlock x:Name="A_Ps" Height="30" Width="40" Margin="18 0 55 0"></TextBlock>
+                    <TextBlock x:Name="A_Lp" Height="30" Width="40" Margin="0 0 50 0"></TextBlock>
+                    <TextBlock x:Name="A_Hc" Height="30" Width="40" Margin="15 0 0 0"></TextBlock>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

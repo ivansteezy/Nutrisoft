@@ -12,24 +12,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nutrisoft"
         mc:Ignorable="d"
-        Title="Nutrisoft" Height="600" Width="900" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+        Title="Nutrisoft" Height="600" Width="900" WindowStyle="None" WindowState="Maximized" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <!--Intenta que al dar click el background cambie su opacity-->
-    <Window.Resources>
-        <Style x:Key="Aclarar" TargetType="Button">
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="true">
-                    <Setter Property="Opacity" Value="0.3"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
 
     <Grid>
         <Border Height="30" VerticalAlignment="Top" MouseLeftButtonDown="Mover" Background="Transparent">
             <Grid>
                 <materialDesign:ColorZone Background="#81c41d">
                     <StackPanel HorizontalAlignment="Right">
-                        <Button Width="30" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Padding="0" Click="Cerrar" Background="#81c41d">
+                        <Button Margin="5" Width="30" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Padding="0" Click="Cerrar" Background="#81c41d">
                             <materialDesign:PackIcon Kind="WindowClose"/>
                         </Button>
                     </StackPanel>
@@ -45,21 +36,63 @@
             </Grid>
         </Border>
         <TextBlock Style="{StaticResource Fuente}" x:Name="Titulo" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="N u t r i s o f t" VerticalAlignment="Top" FontSize="85" FontWeight="Normal" Width="342" Margin="278,10,280,0"/>
-        <StackPanel Orientation="Horizontal">
-            <Button Height="Auto"  HorizontalAlignment="Center" Margin="10 200">
-                <Image Source="Imagenes\paciente.png" Width="188" Height="200"/>
-            </Button>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Center" Grid.Column="0" MouseDown="Dietas">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Source" Value="C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\Imagenes\dieta.png"/>
+                        <Setter Property="Height" Value="300"/>
+                        <Setter Property="Width" Value="300"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Height" Value="350"/>
+                                <Setter Property="Width" Value="350"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+            <TextBlock Style="{StaticResource Fuente}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="100" Margin="0 0 0 100">Dieta</TextBlock>
+            
+            <Image HorizontalAlignment="Center" Grid.Column="1" MouseDown="Cita">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Source" Value="C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\Imagenes\cita.png"/>
+                        <Setter Property="Height" Value="300"/>
+                        <Setter Property="Width" Value="300"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Height" Value="350"/>
+                                <Setter Property="Width" Value="350"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+            
+            <TextBlock Style="{StaticResource Fuente}" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="100" Margin="0 0 0 100">Cita</TextBlock>
 
-            <Button Height="Auto" HorizontalAlignment="Left" Margin="80 200">
-                <Image Source="Imagenes\DIETA.png" Width="214" Height="190"/>
-            </Button>
-
-            <Button Height="Auto"  HorizontalAlignment="Right" Margin="30 200">
-                <Image Source="Imagenes\cita.png" Width="188" Height="200"/>
-            </Button>
-
-        </StackPanel>
-
-
+            <Image HorizontalAlignment="Center" Grid.Column="2" MouseDown="Pacientes">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Source" Value="C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\Imagenes\paciente.png"/>
+                        <Setter Property="Height" Value="300"/>
+                        <Setter Property="Width" Value="300"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Height" Value="350"/>
+                                <Setter Property="Width" Value="350"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+            <TextBlock Style="{StaticResource Fuente}" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="100" Margin="0 0 0 100">Paciente</TextBlock>
+        </Grid>
     </Grid>
 </Window>

@@ -70,7 +70,7 @@ namespace Nutrisoft
 
         private void MedidasAntropometricas(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new MedidasAntropometricas();
         }
 
         private void DatosBioquimicos(object sender, RoutedEventArgs e)
@@ -80,7 +80,7 @@ namespace Nutrisoft
 
         private void HallazgosFisicos(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new HallazgosFisicos();
         }
 
         private void DiagnosticoNutricional(object sender, RoutedEventArgs e)
@@ -90,12 +90,12 @@ namespace Nutrisoft
 
         private void Requerimientos(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new Requerimientos();
         }
 
         private void Distribucion(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new Distribucion();
+            MainFrame.Content = new Distribucion(); //Pendiente de terminar las tablas.
         }
 
         private void Tiempos(object sender, RoutedEventArgs e)
@@ -111,6 +111,11 @@ namespace Nutrisoft
         private void Notificaciones(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Menu_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Una posible solucion para el tamaño del menu
         }
     }
 

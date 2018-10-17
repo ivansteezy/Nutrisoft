@@ -66,6 +66,9 @@
     <Compile Include="AntecedentesDieteticos.xaml.cs">
       <DependentUpon>AntecedentesDieteticos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Citas.xaml.cs">
+      <DependentUpon>Citas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DatosBioquimicos.xaml.cs">
       <DependentUpon>DatosBioquimicos.xaml</DependentUpon>
     </Compile>
@@ -75,8 +78,14 @@
     <Compile Include="Distribucion.xaml.cs">
       <DependentUpon>Distribucion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HallazgosFisicos.xaml.cs">
+      <DependentUpon>HallazgosFisicos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HistorialPaciente.xaml.cs">
       <DependentUpon>HistorialPaciente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MedidasAntropometricas.xaml.cs">
+      <DependentUpon>MedidasAntropometricas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
@@ -87,7 +96,14 @@
     <Compile Include="Registro.xaml.cs">
       <DependentUpon>Registro.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Requerimientos.xaml.cs">
+      <DependentUpon>Requerimientos.xaml</DependentUpon>
+    </Compile>
     <Page Include="AntecedentesDieteticos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Citas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -100,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Distribucion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HallazgosFisicos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -119,6 +139,10 @@
       <DependentUpon>InicioSesion.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MedidasAntropometricas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Menu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -128,6 +152,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Registro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Requerimientos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

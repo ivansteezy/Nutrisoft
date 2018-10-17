@@ -14,9 +14,16 @@
       mc:Ignorable="d"
       Title="HistorialPaciente">
 
-    <Grid Height="765" Width="1421">
-        <TextBlock Margin="20,0,1051,719" FontSize="30">-Diagnostico nutricional</TextBlock>
-        <StackPanel Orientation="Vertical" Height="300" VerticalAlignment="Top" Margin="0 40">
+    <Grid Height="765" Width="1421" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="250*"/>
+            <RowDefinition Height="250*"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+  
+        <TextBlock Grid.Row="0"  FontSize="30">-Diagnostico nutricional</TextBlock>
+        <StackPanel Orientation="Vertical" Grid.Row="1" VerticalAlignment="Top">
             <TextBlock HorizontalAlignment="Center" FontSize="25">Problemas</TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <StackPanel Margin="0 0 10 0">
@@ -28,10 +35,10 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" Height="300" VerticalAlignment="Bottom" Margin="0 0 0 100">
+        <StackPanel Orientation="Vertical" Grid.Row="2" VerticalAlignment="Bottom">
             <TextBlock HorizontalAlignment="Center" FontSize="25">Diagnostico Principal</TextBlock>
-            <RichTextBox HorizontalAlignment="Center" Margin="0 30" Height="225" Width="1400"/>
+            <RichTextBox HorizontalAlignment="Center" Margin="0 30" Height="225" Width="1000"/>
         </StackPanel>
-        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
+        <Button Grid.Row="3" Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="#a8ed42" Margin="20">Guardar cambios.</Button>
     </Grid>
 </Page>
