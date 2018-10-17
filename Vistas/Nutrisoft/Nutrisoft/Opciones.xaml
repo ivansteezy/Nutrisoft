@@ -45,7 +45,7 @@
             <Image HorizontalAlignment="Center" Grid.Column="0" MouseDown="Dietas">
                 <Image.Style>
                     <Style TargetType="Image">
-                        <Setter Property="Source" Value="Imagenes/DIETA.png"/>
+                        <Setter Property="Source" Value="Imagenes\dieta.png"/>
                         <Setter Property="Height" Value="300"/>
                         <Setter Property="Width" Value="300"/>
                         <Style.Triggers>
@@ -62,7 +62,7 @@
             <Image HorizontalAlignment="Center" Grid.Column="1" MouseDown="Cita">
                 <Image.Style>
                     <Style TargetType="Image">
-                        <Setter Property="Source" Value="C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\Imagenes\cita.png"/>
+                        <Setter Property="Source" Value="Imagenes\cita.png"/>
                         <Setter Property="Height" Value="300"/>
                         <Setter Property="Width" Value="300"/>
                         <Style.Triggers>
@@ -80,7 +80,7 @@
             <Image HorizontalAlignment="Center" Grid.Column="2" MouseDown="Pacientes">
                 <Image.Style>
                     <Style TargetType="Image">
-                        <Setter Property="Source" Value="C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\Imagenes\paciente.png"/>
+                        <Setter Property="Source" Value="Imagenes\User.png"/>
                         <Setter Property="Height" Value="300"/>
                         <Setter Property="Width" Value="300"/>
                         <Style.Triggers>

@@ -12,7 +12,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
-            <ImageBrush x:Key="MyImageBrush" ImageSource="C:\Users\Ivan\Desktop\Nutrisoft\Vistas\Nutrisoft\Nutrisoft\Imagenes\Background1.jpg"/>
+            <ImageBrush x:Key="MyImageBrush" ImageSource="Imagenes\Background.jpg"/>
             <Style x:Key="Fuente">
                 <Setter Property="TextElement.FontFamily" Value="/Fonts/#Spring Holiday"></Setter>
             </Style>
