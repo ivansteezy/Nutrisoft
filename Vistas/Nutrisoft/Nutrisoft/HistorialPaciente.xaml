@@ -34,7 +34,8 @@
                 <TextBox x:Name="Talla" Width="150" Margin="30 0" materialDesign:HintAssist.Hint="Talla" materialDesign:HintAssist.IsFloating="True"/>
             </StackPanel>
             <TextBlock Margin="20 20 0 0" FontSize="25">Motivo de la consulta:</TextBlock>
-            <RichTextBox HorizontalAlignment="Left" Margin="20 40" Height="200" Width="500"></RichTextBox>
+            <RichTextBox HorizontalAlignment="Left" Margin="20,20,0,0" Height="200" Width="500"></RichTextBox>
+            <TextBox HorizontalAlignment="Center" x:Name="ActividadFisica" Width="150" materialDesign:HintAssist.Hint="Actividad Fisica %" materialDesign:HintAssist.IsFloating="True" />
         </StackPanel>
 
         <StackPanel Margin="656,0,408,0">

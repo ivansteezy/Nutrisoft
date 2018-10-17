@@ -17,13 +17,9 @@
     <Grid Height="765" Width="1421">
         <TextBlock Margin="20,0,1027,704" FontSize="30">-Medidas antropometricas</TextBlock>
         <!--Sera un grid para las medidas 8 filas por 3 columnas son 23 datos -->
-        <Grid Width="700" HorizontalAlignment="Left" Margin="0 40 0 0">
+        <TextBlock Grid.Column="0" FontSize="20" Margin="10 40 0 0">Plieges (mm)</TextBlock>
+        <Grid Width="700" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0 90 0 0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -34,7 +30,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="Triceps" Width="90" Grid.Column="0" Grid.Row="0" materialDesign:HintAssist.Hint="Triceps" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Triceps" Width="90" Grid.Column="0" Grid.Row="0" materialDesign:HintAssist.Hint="Triceps (mm)" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Subescapular" Width="90" Grid.Column="1" Grid.Row="0" materialDesign:HintAssist.Hint="Subescapular" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Biceps" Width="90" Grid.Column="2" Grid.Row="0" materialDesign:HintAssist.Hint="Biceps" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Pectoral" Width="90" Grid.Column="0" Grid.Row="1" materialDesign:HintAssist.Hint="Pectoral" materialDesign:HintAssist.IsFloating="True"/>
@@ -44,20 +40,78 @@
             <TextBox x:Name="Abdominal" Width="90" Grid.Column="1" Grid.Row="2" materialDesign:HintAssist.Hint="Abdominal" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Muslo_Frontal" Width="90" Grid.Column="2" Grid.Row="2" materialDesign:HintAssist.Hint="Muslo Frontal" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Pantorrilla_Med" Width="90" Grid.Column="0" Grid.Row="3" materialDesign:HintAssist.Hint="Pantorrilla Media" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Brazo_Relajado" Width="90" Grid.Column="1" Grid.Row="3" materialDesign:HintAssist.Hint="Brazo Relajado" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Brazo_Tension" Width="90" Grid.Column="2" Grid.Row="3" materialDesign:HintAssist.Hint="Brazo Tenso" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Muñeca" Width="90" Grid.Column="0" Grid.Row="4" materialDesign:HintAssist.Hint="Muñeca" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Torax" Width="90" Grid.Column="1" Grid.Row="4" materialDesign:HintAssist.Hint="Tórax" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Cintura" Width="90" Grid.Column="2" Grid.Row="4" materialDesign:HintAssist.Hint="Cintura" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Abdomen" Width="90" Grid.Column="0" Grid.Row="5" materialDesign:HintAssist.Hint="Abdomen" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Cadera" Width="90" Grid.Column="1" Grid.Row="5" materialDesign:HintAssist.Hint="Cadera" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Muslo_Prox" Width="90" Grid.Column="2" Grid.Row="5" materialDesign:HintAssist.Hint="Muslo Prox." materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Muslo_Medio" Width="90" Grid.Column="0" Grid.Row="6" materialDesign:HintAssist.Hint="Muslo Medio" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Pantorrilla" Width="90" Grid.Column="1" Grid.Row="6" materialDesign:HintAssist.Hint="Pantorrilla" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Humero" Width="90" Grid.Column="2" Grid.Row="6" materialDesign:HintAssist.Hint="Humero" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Femur" Width="90" Grid.Column="0" Grid.Row="7" materialDesign:HintAssist.Hint="Femúr" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Estiloideo" Width="90" Grid.Column="1" Grid.Row="7" materialDesign:HintAssist.Hint="Estiloideo" materialDesign:HintAssist.IsFloating="True"/>
         </Grid>
+        <TextBlock Grid.Column="0" Grid.Row="4" FontSize="20" Margin="10 -170 0 20" VerticalAlignment="Center" HorizontalAlignment="Left">Circunferencias (cm)</TextBlock>
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Width="700">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBox x:Name="Brazo_Relajado" Width="90" Grid.Column="0" Grid.Row="0" materialDesign:HintAssist.Hint="Brazo Relajado" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Brazo_Tension" Width="90" Grid.Column="1" Grid.Row="0" materialDesign:HintAssist.Hint="Brazo Tenso" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Muñeca" Width="90" Grid.Column="2" Grid.Row="0" materialDesign:HintAssist.Hint="Muñeca" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Torax" Width="90" Grid.Column="0" Grid.Row="1" materialDesign:HintAssist.Hint="Tórax" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Cintura" Width="90" Grid.Column="1" Grid.Row="1" materialDesign:HintAssist.Hint="Cintura" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Abdomen" Width="90" Grid.Column="2" Grid.Row="1" materialDesign:HintAssist.Hint="Abdomen" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Cadera" Width="90" Grid.Column="0" Grid.Row="2" materialDesign:HintAssist.Hint="Cadera" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Muslo_Prox" Width="90" Grid.Column="1" Grid.Row="2" materialDesign:HintAssist.Hint="Muslo Prox." materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Muslo_Medio" Width="90" Grid.Column="2" Grid.Row="2" materialDesign:HintAssist.Hint="Muslo Medio" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Pantorrilla" Width="90" Grid.Column="0" Grid.Row="3" materialDesign:HintAssist.Hint="Pantorrilla" materialDesign:HintAssist.IsFloating="True"/>
+        </Grid>
+        
+        <TextBlock FontSize="20" Margin="10 0 0 250" VerticalAlignment="Bottom" HorizontalAlignment="Left">Diámetros(cm)</TextBlock>
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="700" Margin="0 0 0 200">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="Humero" Width="90" Grid.Column="0" Grid.Row="0" materialDesign:HintAssist.Hint="Humero" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Femur" Width="90" Grid.Column="1" Grid.Row="0" materialDesign:HintAssist.Hint="Femúr" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Estiloideo" Width="90" Grid.Column="2" Grid.Row="0" materialDesign:HintAssist.Hint="Estiloideo" materialDesign:HintAssist.IsFloating="True"/>
+        </Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Width="500" Margin="0 0 150 120">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Label Grid.Column="0" Grid.Row="0" FontSize="15">Grasa</Label>
+                <TextBlock Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" x:Name="PorcentajeGrasa" FontSize="15">%</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" x:Name="Kg_Grasa" FontSize="15">Kg</TextBlock>
+                <Label Grid.Column="3" Grid.Row="0" >Hola</Label>
+                
+                <Label Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" FontSize="15" Height="50" Margin="0 20 0 0">IMC:</Label>
+                <TextBlock Grid.Column="1" Grid.Row="1" x:Name="Imc" VerticalAlignment="Center" FontSize="15">Imc</TextBlock>
+                
+                <Label Grid.Column="0" Grid.Row="2" FontSize="15">Musculo</Label>
+                <TextBlock Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" x:Name="PrcentajeMusculo" FontSize="15">%</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" x:Name="Kg_Musculo" FontSize="15">Kg</TextBlock>
+                <Label Grid.Column="3" Grid.Row="2" >Hola</Label>
+                <TextBlock Grid.Column="4" Grid.Row="2" VerticalAlignment="Center"  FontSize="15" >Imc</TextBlock>
+            </Grid>
+        </StackPanel>
+        
         <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
     </Grid>
 </Page>
