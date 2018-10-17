@@ -31,37 +31,35 @@
                 </materialDesign:ColorZone>
             </Border>
         </Grid>
-        
-            
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 40 0 0">
-                    <Menu Background="#a8ed42" Loaded="Menu_Loaded" Name="Main_Menu">
-                        <MenuItem Header="Evaluacion nutricional">
-                            <MenuItem Header="Historial del paciente" Click="HistorialPaciente"/>
-                            <MenuItem Header="Alimentacion" Click="Alimentacion">
-                                <MenuItem Header="Recordatorio 24h" Click="Recordatorio24h"></MenuItem>
-                                <MenuItem Header="Antecedentes dieteticos" Click="AntecedentesDieteticos"></MenuItem>
-                            </MenuItem>
-                            <MenuItem Header="Medidas antropomórficas" Click="MedidasAntropometricas"/>
-                            <MenuItem Header="Datos bioquimicos" Click="DatosBioquimicos"/>
-                            <MenuItem Header="Hallazgos físicos" Click="HallazgosFisicos"/>
-                        </MenuItem>
 
-                        <MenuItem Header="Diagnostico Nutricional" Click="DiagnosticoNutricional"/>
 
-                        <MenuItem Header="Tratamiento nutricional">
-                            <MenuItem Header="Requerimientos" Click="Requerimientos"/>
-                            <MenuItem Header="Distribucion" Click="Distribucion"/>
-                            <MenuItem Header="Tiempos" Click="Tiempos"/>
-                        </MenuItem>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 40 0 0">
+            <Menu Background="#a8ed42" Loaded="Menu_Loaded" Name="Main_Menu">
+                <MenuItem Header="Evaluacion nutricional">
+                    <MenuItem Header="Historial del paciente" Click="HistorialPaciente"/>
+                    <MenuItem Header="Alimentacion" Click="Alimentacion">
+                        <MenuItem Header="Recordatorio 24h" Click="Recordatorio24h"></MenuItem>
+                        <MenuItem Header="Antecedentes dieteticos" Click="AntecedentesDieteticos"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Medidas antropomórficas" Click="MedidasAntropometricas"/>
+                    <MenuItem Header="Datos bioquimicos" Click="DatosBioquimicos"/>
+                    <MenuItem Header="Hallazgos físicos" Click="HallazgosFisicos"/>
+                </MenuItem>
 
-                        <MenuItem Header="Expedientes" Click="Expedientes"/>
-                        <MenuItem Header="Notificaciones" Click="Notificaciones"/>
-                    </Menu>
-                </StackPanel>
+                <MenuItem Header="Diagnostico Nutricional" Click="DiagnosticoNutricional"/>
 
-        <Grid Margin="0 90 0 0">
+                <MenuItem Header="Tratamiento nutricional">
+                    <MenuItem Header="Requerimientos" Click="Requerimientos"/>
+                    <MenuItem Header="Distribucion" Click="Distribucion"/>
+                    <MenuItem Header="Tiempos" Click="Tiempos"/>
+                </MenuItem>
+
+                <MenuItem Header="Expedientes" Click="Expedientes"/>
+                <MenuItem Header="Notificaciones" Click="Notificaciones"/>
+            </Menu>
+            </StackPanel>
+            <Grid Margin="0 150 0 0">
             <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden">
-                
             </Frame>
             </Grid>
         

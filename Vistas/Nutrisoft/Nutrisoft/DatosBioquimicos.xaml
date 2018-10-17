@@ -16,89 +16,10 @@
 
     <Grid Height="765" Width="1421">
         <TextBlock Margin="20,0,891,623" FontSize="30">-Datos Bioquimicos</TextBlock>
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30 50">
-            <TextBlock FontSize="25" Foreground="#81c41d">Proteico.</TextBlock>
-
-            <StackPanel Orientation="Horizontal" Margin="0 20">
-                <TextBlock FontSize="20" VerticalAlignment="Center">Albuimina</TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="53 0">
-                    <RichTextBox Margin="30 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="0 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="70 0" Width="200" Height="70"></RichTextBox>
-                </StackPanel>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0 20">
-                <TextBlock FontSize="20" VerticalAlignment="Center">Pre-Albuimina</TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="15 0">
-                    <RichTextBox Margin="30 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="0 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="70 0" Width="200" Height="70"></RichTextBox>
-                </StackPanel>
-            </StackPanel>
-
-            <TextBlock FontSize="25" Foreground="#81c41d">Renal.</TextBlock>
-            <StackPanel Orientation="Horizontal" Margin="0 20">
-                <TextBlock FontSize="20" VerticalAlignment="Center">Albuimina</TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="53 0">
-                    <RichTextBox Margin="30 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="0 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="70 0" Width="200" Height="70"></RichTextBox>
-                </StackPanel>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0 20">
-                <TextBlock FontSize="20" VerticalAlignment="Center">Pre-Albuimina</TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="15 0">
-                    <RichTextBox Margin="30 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="0 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="70 0" Width="200" Height="70"></RichTextBox>
-                </StackPanel>
-            </StackPanel>
-        </StackPanel>
-
-       
-        
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30 50">
-            <TextBlock FontSize="25" Foreground="#81c41d">Lipidico.</TextBlock>
-
-            <StackPanel Orientation="Horizontal" Margin="0 20">
-                <TextBlock FontSize="20" VerticalAlignment="Center">Albuimina</TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="53 0">
-                    <RichTextBox Margin="30 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="0 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="70 0" Width="200" Height="70"></RichTextBox>
-                </StackPanel>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0 20">
-                <TextBlock FontSize="20" VerticalAlignment="Center">Pre-Albuimina</TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="15 0">
-                    <RichTextBox Margin="30 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="0 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="70 0" Width="200" Height="70"></RichTextBox>
-                </StackPanel>
-            </StackPanel>
-
-            <TextBlock FontSize="25" Foreground="#81c41d">Eudocrin.</TextBlock>
-            <StackPanel Orientation="Horizontal" Margin="0 20">
-                <TextBlock FontSize="20" VerticalAlignment="Center">Albuimina</TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="53 0">
-                    <RichTextBox Margin="30 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="0 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="70 0" Width="200" Height="70"></RichTextBox>
-                </StackPanel>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Margin="0 20">
-                <TextBlock FontSize="20" VerticalAlignment="Center">Pre-Albuimina</TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="15 0">
-                    <RichTextBox Margin="30 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="0 0" Width="50" Height="50"></RichTextBox>
-                    <RichTextBox Margin="70 0" Width="200" Height="70"></RichTextBox>
-                </StackPanel>
-            </StackPanel>
-        </StackPanel>
-        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 90 0 0">
+            <ComboBox>
+                <ComboBoxItem>Biometría Hermática</ComboBoxItem>
+            </ComboBox>
+        </Grid>
     </Grid>
 </Page>
