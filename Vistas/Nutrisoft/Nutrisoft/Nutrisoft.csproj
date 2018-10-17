@@ -81,6 +81,15 @@
     <Compile Include="Distribucion.xaml.cs">
       <DependentUpon>Distribucion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Electrolitos.xaml.cs">
+      <DependentUpon>Electrolitos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnzimasSericas.xaml.cs">
+      <DependentUpon>EnzimasSericas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExamenGeneralDeOrina.xaml.cs">
+      <DependentUpon>ExamenGeneralDeOrina.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HallazgosFisicos.xaml.cs">
       <DependentUpon>HallazgosFisicos.xaml</DependentUpon>
     </Compile>
@@ -95,6 +104,15 @@
     </Compile>
     <Compile Include="Opciones.xaml.cs">
       <DependentUpon>Opciones.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilHepatico.xaml.cs">
+      <DependentUpon>PerfilHepatico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilLipidico.xaml.cs">
+      <DependentUpon>PerfilLipidico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuimicaSanguinea.xaml.cs">
+      <DependentUpon>QuimicaSanguinea.xaml</DependentUpon>
     </Compile>
     <Compile Include="Registro.xaml.cs">
       <DependentUpon>Registro.xaml</DependentUpon>
@@ -123,6 +141,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Distribucion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Electrolitos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnzimasSericas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExamenGeneralDeOrina.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -155,6 +185,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Opciones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PerfilHepatico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PerfilLipidico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuimicaSanguinea.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -207,6 +249,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Imagenes\dieta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

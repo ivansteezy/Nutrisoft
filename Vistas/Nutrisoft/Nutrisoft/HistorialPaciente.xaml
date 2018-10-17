@@ -29,38 +29,63 @@
                 <RadioButton x:Name = "Femenino" Margin="120 0" Content="Femenino" Background="Black"/>
             </StackPanel>
 
-            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0, 20" Width="449">
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0, 20" Width="580">
                 <TextBox x:Name="Peso" Width="150" Margin="30 0" materialDesign:HintAssist.Hint="Peso(kg)" materialDesign:HintAssist.IsFloating="True"/>
                 <TextBox x:Name="Talla" Width="150" Margin="30 0" materialDesign:HintAssist.Hint="Talla" materialDesign:HintAssist.IsFloating="True"/>
             </StackPanel>
+            <TextBox HorizontalAlignment="Center" x:Name="ActividadFisica" Width="150" materialDesign:HintAssist.Hint="Actividad Fisica %" materialDesign:HintAssist.IsFloating="True" Margin="0 0 390 0" />
             <TextBlock Margin="20 20 0 0" FontSize="25">Motivo de la consulta:</TextBlock>
             <RichTextBox HorizontalAlignment="Left" Margin="20,20,0,0" Height="200" Width="500"></RichTextBox>
-            <TextBox HorizontalAlignment="Center" x:Name="ActividadFisica" Width="150" materialDesign:HintAssist.Hint="Actividad Fisica %" materialDesign:HintAssist.IsFloating="True" />
         </StackPanel>
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Width="450" Height="600" Margin="0 10 150 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Cardiovascular</Label>
+            <Label Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Endócrina/Metabolica</Label>
+            <Label Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">Gastrointestinal</Label>
+            <Label Grid.Column="0" Grid.Row="3" VerticalAlignment="Center">Ginecología</Label>
+            <Label Grid.Column="0" Grid.Row="4" VerticalAlignment="Center">Hemato-oncología</Label>
+            <Label Grid.Column="0" Grid.Row="5" VerticalAlignment="Center">Inmune Piel y Tegumentos</Label>
+            <Label Grid.Column="0" Grid.Row="6" VerticalAlignment="Center">Músculo-esquelético</Label>
+            <Label Grid.Column="0" Grid.Row="7" VerticalAlignment="Center">Neurológico</Label>
+            <Label Grid.Column="0" Grid.Row="8" VerticalAlignment="Center">Psicológico</Label>
+            <Label Grid.Column="0" Grid.Row="9" VerticalAlignment="Center">Respiratorio</Label>
+            <Label Grid.Column="0" Grid.Row="10" VerticalAlignment="Center">Cardiovascular</Label>
+            <Label Grid.Column="0" Grid.Row="11" VerticalAlignment="Center">Cardiovascular</Label>
+            <Label Grid.Column="0" Grid.Row="12" VerticalAlignment="Center">Otros</Label>
 
-        <StackPanel Margin="656,0,408,0">
-            <TextBlock Width="300" FontSize="25" Margin="0 20 0 50" HorizontalAlignment="Left">Enfermedades patológicas.</TextBlock>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-        </StackPanel>
-
-        <StackPanel VerticalAlignment="Top" Width="350" Height="610" Margin="1028,0,43, 0">
-            <TextBlock Width="350" FontSize="25" Margin="0 20 0 50">Enfermedades no patológicas.</TextBlock>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-            <CheckBox FontSize="20" Margin="30 0 0 40" Background="Black">Cardio vasculares</CheckBox>
-        </StackPanel>
+            <RichTextBox Grid.Column="1" Grid.Row="0" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="1" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="2" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="3" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="4" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="5" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="6" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="7" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="8" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="9" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="10" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="11" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="12" Margin="5"></RichTextBox>
+            <RichTextBox Grid.Column="1" Grid.Row="13" Margin="5"></RichTextBox>
+        </Grid>
         <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
     </Grid>
 </Page>

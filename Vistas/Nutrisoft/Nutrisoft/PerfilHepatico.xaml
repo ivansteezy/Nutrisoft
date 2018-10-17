@@ -1,5 +1,5 @@
-﻿<Page x:Class="Nutrisoft.BiometriaHematica"
-      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+﻿<Page x:Class="Nutrisoft.PerfilHepatico"
+       TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"

@@ -117,6 +117,13 @@ namespace Nutrisoft
         {
             //Una posible solucion para el tamaño del menu
         }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Opciones opciones = new Opciones();
+            opciones.Show();
+            this.Close();
+        }
     }
 
 }

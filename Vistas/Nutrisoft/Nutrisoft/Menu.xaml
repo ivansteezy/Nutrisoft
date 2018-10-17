@@ -31,8 +31,7 @@
                 </materialDesign:ColorZone>
             </Border>
         </Grid>
-
-
+        <Image Source="Imagenes/Home.png" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 0 0 0" MouseDown="Image_MouseDown"/>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 40 0 0">
             <Menu Background="#a8ed42" Loaded="Menu_Loaded" Name="Main_Menu">
                 <MenuItem Header="Evaluacion nutricional">
@@ -58,10 +57,9 @@
                 <MenuItem Header="Notificaciones" Click="Notificaciones"/>
             </Menu>
             </StackPanel>
-            <Grid Margin="0 150 0 0">
-            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden">
-            </Frame>
-            </Grid>
+            <Grid Margin="0,93,0,0">
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        </Grid>
         
     </Grid>
 </Window>

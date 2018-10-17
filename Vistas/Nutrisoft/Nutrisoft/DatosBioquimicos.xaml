@@ -15,11 +15,18 @@
       Title="HistorialPaciente">
 
     <Grid Height="765" Width="1421">
-        <TextBlock Margin="20,0,891,623" FontSize="30">-Datos Bioquimicos</TextBlock>
-        <Grid VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 90 0 0">
-            <ComboBox>
+        <TextBlock Margin="20,0,1134,710" FontSize="30">-Datos Bioquimicos</TextBlock>
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 0 0 0">
+            <ComboBox Width="500" x:Name="Opciones" SelectionChanged="Opciones_SelectionChanged" DropDownClosed="Opciones_DropDownClosed">
                 <ComboBoxItem>Biometría Hermática</ComboBoxItem>
+                <ComboBoxItem>Química Sanguínea</ComboBoxItem>
+                <ComboBoxItem>Electrolitos</ComboBoxItem>
+                <ComboBoxItem>Examen General de Orina</ComboBoxItem>
+                <ComboBoxItem>Perfil Lipídico</ComboBoxItem>
+                <ComboBoxItem>Perfil Hepatíco</ComboBoxItem>
+                <ComboBoxItem>Enzimas Séricas</ComboBoxItem>
             </ComboBox>
         </Grid>
+        <Frame x:Name="DatosFrame" NavigationUIVisibility="Hidden" Margin="0,88,0,0"/>
     </Grid>
 </Page>
