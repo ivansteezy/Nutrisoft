@@ -49,8 +49,8 @@
                 </StackPanel>
             </StackPanel>
         </StackPanel>
-        <StackPanel Height="300" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0 0 0 110">
-            <TextBlock FontSize="25" Foreground="#a8ed42" Margin="20,0,0,270">GET</TextBlock>
+        <StackPanel Height="300" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="15 0 0 143" Width="400" HorizontalAlignment="Left">
+            <TextBlock FontSize="25" Foreground="#a8ed42" Margin="10,0,0,270">GET</TextBlock>
             <StackPanel Width="50" HorizontalAlignment="Left" Margin="-30,30,0,0">
                 <TextBlock FontSize="20" Margin="0 20 0 30"><Run Text="GEB"/></TextBlock>
                 <TextBlock FontSize="20" Margin="0 0 0 30"><Run Text="ETA"/></TextBlock>
@@ -68,8 +68,77 @@
                 <Label FontSize="20" HorizontalAlignment="Center" Margin="0 70 0 0" Content="+"/>
                 <Label FontSize="20" HorizontalAlignment="Center" Margin="0 20" Content="+"/>
             </StackPanel>
+        </StackPanel>
+        <TextBlock FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="250 0 0 90" Foreground="#a8ed42">Factor Estrés/Patologia</TextBlock>
+        <Grid Width="400" Height="300" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 250 90">
             
-            <TextBlock FontSize="25" VerticalAlignment="Top" Margin="500,2,0,0">Factor Estrés/Patologia</TextBlock>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0">Fiebre</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1">Cirugía efectiva</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="2">Sepsis</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="3">Peritonitis</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="4">Infección grave</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="5">Infección con traumatismo</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="6">Trauma craneocefálico</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="7">Traumatismo múltiple</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="8">Fractura múltiple hueso largo</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="9">Cáncer</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="10">Quemaduras</Label>
+
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">1.2 x 1°C (>37°C)</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">1 - 1.1</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2">1.2 - 1.4</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3">1.05 - 1.25</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="4">1.2 - 1.6</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="5">1.3 - 1.55</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="6">1.3</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="7">1.4</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="8">1.1 - 1.3</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="9">1.1 - 1.45</Label>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="10">1.5 - 2.1</Label>
+        </Grid>
+
+        <Grid Width="550" Height="90" Margin="808,375,113,300">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">Estrés leve</Label>
+            <Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cirugía</Label>
+            <Label Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">1.1</Label>
+            <Label Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">Estrés Moderado</Label>
+            <Label Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">Lesión o infección mod.</Label>
+            <Label Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">1.2 - 1.3</Label>
+            <Label Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">Estrés intenso</Label>
+            <Label Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">Disfunción orgánica mult.</Label>
+            <Label Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">1.4 - 1.5</Label>
+        </Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 320 200">
+            <Label FontSize="20" Margin="0 0 50 0">Factor de estrés</Label>
+            <RichTextBox Width="60" Height="40" FontSize="20" VerticalAlignment="Center"></RichTextBox>
         </StackPanel>
         <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
     </Grid>
