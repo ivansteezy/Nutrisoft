@@ -73,8 +73,107 @@
             </StackPanel>
         </StackPanel>
         
-            <TextBlock HorizontalAlignment="Right" FontSize="25" VerticalAlignment="Top">Tipo de comida.</TextBlock>
+            <TextBlock HorizontalAlignment="Right" FontSize="25" VerticalAlignment="Top" Margin="0 0 400 0">Tipo de comida.</TextBlock>
+        
+            <Grid Width="600" Height="645" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 180 50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="1" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="2" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="3" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="4" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="5" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="6" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="7" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="8" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="9" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="10" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="11" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="12" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="13" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="14" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="15" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="16" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Row="17" Grid.ColumnSpan="6" BorderBrush="Black" BorderThickness="1,1,1,1" CornerRadius="0 0 6 6"/>
+            
+
+            <Border Grid.Column="0" Grid.RowSpan="18" BorderBrush="Black" BorderThickness="1,1,1,1" CornerRadius="6 0 0 6"/>
+            <Border Grid.Column="1" Grid.RowSpan="18" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Column="2" Grid.RowSpan="18" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Column="3" Grid.RowSpan="18" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Column="4" Grid.RowSpan="18" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <Border Grid.Column="5" Grid.RowSpan="18" BorderBrush="Black" BorderThickness="1,1,1,1" CornerRadius="0 6 6 0"/>
+
+            <Label Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">Tipo Alimento</Label>
+            <Label Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">Verduras</Label>
+            <Label Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">Frutas</Label>
+            <Label Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">Cereales S/G</Label>
+            <Label Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">Cereales C/G</Label>
+            <Label Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center">Leguminosas</Label>
+            <Label Grid.Column="0" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center">AOA MBAG</Label>
+            <Label Grid.Column="0" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center">AOA BAG</Label>
+            <Label Grid.Column="0" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center">AOA MAG</Label>
+            <Label Grid.Column="0" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Center">AOA AAG</Label>
+            <Label Grid.Column="0" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Center">Leche Des</Label>
+            <Label Grid.Column="0" Grid.Row="11" VerticalAlignment="Center" HorizontalAlignment="Center">Leche Semi</Label>
+            <Label Grid.Column="0" Grid.Row="12" VerticalAlignment="Center" HorizontalAlignment="Center">Leche Entera</Label>
+            <Label Grid.Column="0" Grid.Row="13" VerticalAlignment="Center" HorizontalAlignment="Center">Leche C/A</Label>
+            <Label Grid.Column="0" Grid.Row="14" VerticalAlignment="Center" HorizontalAlignment="Center">Aceites S/P</Label>
+            <Label Grid.Column="0" Grid.Row="15" VerticalAlignment="Center" HorizontalAlignment="Center">Aceites C/P</Label>
+            <Label Grid.Column="0" Grid.Row="16" VerticalAlignment="Center" HorizontalAlignment="Center">Azucar S/G</Label>
+            <Label Grid.Column="0" Grid.Row="17" VerticalAlignment="Center" HorizontalAlignment="Center">Azucar C/G</Label>
+
+            <Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">Equivalencia</Label>
+            <Label Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">Kcal</Label>
+            <Label Grid.Column="3" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">Pro</Label>
+            <Label Grid.Column="4" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">Lip</Label>
+            <Label Grid.Column="5" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">HCO</Label>
+
+            <RichTextBox Grid.Column="1" Grid.Row="1" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="2" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="3" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="4" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="5" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="6" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="7" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="8" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="9" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="10" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="11" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="12" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="13" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="14" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="15" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="16" Margin="5"/>
+            <RichTextBox Grid.Column="1" Grid.Row="17" Margin="5"/>
+        </Grid>
+        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 15" Background="#a8ed42">Guardar cambios.</Button>
     </Grid>
 </Page>
