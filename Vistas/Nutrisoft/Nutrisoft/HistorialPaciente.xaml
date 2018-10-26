@@ -18,10 +18,14 @@
         <TextBlock Margin="20,0,891,623" FontSize="30">-Historial del Paciente</TextBlock>
         <StackPanel Orientation="Vertical" Margin="80 100 0 10" HorizontalAlignment="Left" Width="600">
             <TextBox HorizontalAlignment="Left" x:Name="Nombre" Width="400" materialDesign:HintAssist.Hint="Nombre(s)" materialDesign:HintAssist.IsFloating="True" Margin="20 0"/>
-
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBox HorizontalAlignment="Left" x:Name="Apellido_Pat" Width="150" materialDesign:HintAssist.Hint="Apellido Paterno" materialDesign:HintAssist.IsFloating="True" Margin="20 0 80 0"/>
+                <TextBox HorizontalAlignment="Left" x:Name="Apellido_Mat" Width="150" materialDesign:HintAssist.Hint="Apellido Materno" materialDesign:HintAssist.IsFloating="True" Margin="20 0"/>
+            </StackPanel>
+            
             <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0, 30" Width="449">
-                <DatePicker Margin="30 0" x:Name="Fecha" Width="150" materialDesign:HintAssist.Hint="Fecha" materialDesign:HintAssist.IsFloating="True"/>
-                <TextBox x:Name="Edad" Width="150" Margin="30 0" materialDesign:HintAssist.Hint="Edad" materialDesign:HintAssist.IsFloating="True"/>
+                <DatePicker Margin="30 0" x:Name="Fecha" Width="155" materialDesign:HintAssist.Hint="Fecha de nacimiento" materialDesign:HintAssist.IsFloating="True"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Width="359" Margin="30,30,210,30">
@@ -35,7 +39,7 @@
             </StackPanel>
             <TextBox HorizontalAlignment="Center" x:Name="ActividadFisica" Width="150" materialDesign:HintAssist.Hint="Actividad Fisica %" materialDesign:HintAssist.IsFloating="True" Margin="0 0 390 0" />
             <TextBlock Margin="20 20 0 0" FontSize="25">Motivo de la consulta:</TextBlock>
-            <RichTextBox HorizontalAlignment="Left" Margin="20,20,0,0" Height="200" Width="500"></RichTextBox>
+            <RichTextBox x:Name="Motivo_Consulta" HorizontalAlignment="Left" Margin="20,20,0,0" Height="200" Width="500"></RichTextBox>
         </StackPanel>
         <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Width="450" Height="600" Margin="0 10 150 0">
             <Grid.ColumnDefinitions>
@@ -86,6 +90,6 @@
             <RichTextBox Grid.Column="1" Grid.Row="12" Margin="5"></RichTextBox>
             <RichTextBox Grid.Column="1" Grid.Row="13" Margin="5"></RichTextBox>
         </Grid>
-        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
+        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42" Click="Guardar">Guardar cambios.</Button>
     </Grid>
 </Page>

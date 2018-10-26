@@ -42,8 +42,8 @@
             <StackPanel Orientation="Vertical" Margin="0,-10,0,10">
                 <TextBox x:Name="txt_Nombre" Width="350" materialDesign:HintAssist.Hint="Nombre(s)" materialDesign:HintAssist.IsFloating="True"/>
                 <StackPanel Orientation="Horizontal">
-                    <TextBox x:Name="txt_ApellidoPat" Width="166" materialDesign:HintAssist.Hint="Apellido Materno" materialDesign:HintAssist.IsFloating="True" Margin="38 20 20 0"/>
-                    <TextBox x:Name="txt_ApellidoMat" Width="165" materialDesign:HintAssist.Hint="Apellido Paterno" materialDesign:HintAssist.IsFloating="True"/>
+                    <TextBox x:Name="txt_ApellidoPat" Width="166" materialDesign:HintAssist.Hint="Apellido Paterno" materialDesign:HintAssist.IsFloating="True" Margin="38 20 20 0"/>
+                    <TextBox x:Name="txt_ApellidoMat" Width="165" materialDesign:HintAssist.Hint="Apellido Materno" materialDesign:HintAssist.IsFloating="True"/>
                 </StackPanel>
                 <DockPanel>
                     <StackPanel Orientation="Vertical" Margin="0,20,225,20" HorizontalAlignment="Left" Width="200">
@@ -52,16 +52,14 @@
                     </StackPanel>
 
                     <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="-235,0,15,0" Width="170" Height="42">
-                        <TextBox x:Name="txt_Dia" Width="40" materialDesign:HintAssist.Hint="Día" materialDesign:HintAssist.IsFloating="True" Margin="10 0"/>
-                        <TextBox x:Name="txt_Mes" Width="40" materialDesign:HintAssist.Hint="Mes" materialDesign:HintAssist.IsFloating="True" Margin="10 0"/>
-                        <TextBox x:Name="txt_Año" Width="40" materialDesign:HintAssist.Hint="Año" materialDesign:HintAssist.IsFloating="True" Margin="10 0"/>
+                        <DatePicker Width="167" x:Name="Fecha"></DatePicker>
                     </StackPanel>
                 </DockPanel>
                 <StackPanel Orientation="Vertical">
                     <TextBox x:Name="txt_CorreoElectronico" Width="350" materialDesign:HintAssist.Hint="Correo Electronico" materialDesign:HintAssist.IsFloating="True" Margin="10 10"/>
                     <PasswordBox x:Name="txt_Contraseña" Width="350" materialDesign:HintAssist.Hint="Contraseña" materialDesign:HintAssist.IsFloating="True" Margin="10 10"/>
                     <PasswordBox x:Name="txt_ConfirmacionContraseña" Width="350" materialDesign:HintAssist.Hint="Confirmar Contrsaeña" materialDesign:HintAssist.IsFloating="True" Margin="10 0"/>
-                    <Button Background="#81c41d" Content="Registrarse" Width="110" HorizontalAlignment="Center" Margin= "40"/>
+                    <Button Background="#81c41d" Content="Registrarse" Width="110" HorizontalAlignment="Center" Margin= "40" Click="Submit"/>
                 </StackPanel>
             </StackPanel>
         </Grid>

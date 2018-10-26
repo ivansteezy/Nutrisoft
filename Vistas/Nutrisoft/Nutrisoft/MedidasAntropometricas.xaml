@@ -35,7 +35,7 @@
             <TextBox x:Name="Biceps" Width="90" Grid.Column="2" Grid.Row="0" materialDesign:HintAssist.Hint="Biceps" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Pectoral" Width="90" Grid.Column="0" Grid.Row="1" materialDesign:HintAssist.Hint="Pectoral" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Axilar" Width="90" Grid.Column="1" Grid.Row="1" materialDesign:HintAssist.Hint="Axilar" materialDesign:HintAssist.IsFloating="True"/>
-            <TextBox x:Name="Cresta_Liliaca" Width="90" Grid.Column="2" Grid.Row="1" materialDesign:HintAssist.Hint="Cresta Liliaca" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="Cresta_Lliaca" Width="90" Grid.Column="2" Grid.Row="1" materialDesign:HintAssist.Hint="Cresta Liliaca" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Supraespinal" Width="90" Grid.Column="0" Grid.Row="2" materialDesign:HintAssist.Hint="Supraespinal" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Abdominal" Width="90" Grid.Column="1" Grid.Row="2" materialDesign:HintAssist.Hint="Abdominal" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="Muslo_Frontal" Width="90" Grid.Column="2" Grid.Row="2" materialDesign:HintAssist.Hint="Muslo Frontal" materialDesign:HintAssist.IsFloating="True"/>
@@ -112,6 +112,6 @@
             </Grid>
         </StackPanel>
         
-        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42">Guardar cambios.</Button>
+        <Button Width="200" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 90 40" Background="#a8ed42" Click="Guardar">Guardar cambios.</Button>
     </Grid>
 </Page>

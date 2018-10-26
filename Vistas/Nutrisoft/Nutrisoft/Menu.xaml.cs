@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SQLite;
 
 namespace Nutrisoft
 {
@@ -19,6 +20,7 @@ namespace Nutrisoft
     /// </summary>
     public partial class Menu : Window
     {
+        SQLiteConnection Conexion;
         public Menu()
         {
             InitializeComponent();
@@ -96,7 +98,7 @@ namespace Nutrisoft
         private void Distribucion(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = new Distribucion(); //Pendiente de terminar las tablas.
-        }
+        } 
 
         private void Tiempos(object sender, RoutedEventArgs e)
         {
