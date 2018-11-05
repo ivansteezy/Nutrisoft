@@ -12,7 +12,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nutrisoft"
         mc:Ignorable="d"
-        Title="MainWindow" Height="570" Width="425" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="588" Width="425" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -52,7 +52,7 @@
                     </StackPanel>
 
                     <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="-235,0,15,0" Width="170" Height="42">
-                        <DatePicker Width="167" x:Name="Fecha"></DatePicker>
+                        <DatePicker Width="167" x:Name="Fecha" materialDesign:HintAssist.Hint="Fecha de Nacimiento"></DatePicker>
                     </StackPanel>
                 </DockPanel>
                 <StackPanel Orientation="Vertical">
@@ -61,6 +61,7 @@
                     <PasswordBox x:Name="txt_ConfirmacionContraseña" Width="350" materialDesign:HintAssist.Hint="Confirmar Contrsaeña" materialDesign:HintAssist.IsFloating="True" Margin="10 0"/>
                     <Button Background="#81c41d" Content="Registrarse" Width="110" HorizontalAlignment="Center" Margin= "40" Click="Submit"/>
                 </StackPanel>
+                <TextBlock HorizontalAlignment="Right" Margin="0 -20 20 0"><Hyperlink Click="Regresar" Foreground="Gray" Style="{DynamicResource MaterialDesignSubheadingHyperlink}">¿Ye tiene una cuenta?</Hyperlink></TextBlock>
             </StackPanel>
         </Grid>
     </Grid>

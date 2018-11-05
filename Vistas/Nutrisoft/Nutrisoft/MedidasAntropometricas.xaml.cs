@@ -27,6 +27,7 @@ namespace Nutrisoft
 
         private void Guardar(object sender, RoutedEventArgs e)
         {
+            int fk = 1;
             //Teoricamente esta parte funciona, se debe de checar las FK, pues al insertar datos, da una excepcion.
             using (SQLiteConnection con = new SQLiteConnection(CadenaConexion))
             {
@@ -35,10 +36,10 @@ namespace Nutrisoft
                     SQLiteCommand cmd = new SQLiteCommand();
                     cmd.CommandText = @"INSERT INTO medidas(Triceps, Subescapular, Biceps, Pectoral, Axilar, Cresta_Lliaca, Supraespinal, Abdominal, 
                                         Muslo_Frontal, Pantorrilla_Med, Brazo_Relajado, Brazo_Tension, Muñeca, Torax, Cintura, Abdomen, 
-                                        Cadera, Muslo_Prox, Muslo_Med, Pantorrilla, Humero, Femur, Estiloideo) VALUES(@Triceps, @Subescapular,
+                                        Cadera, Muslo_Prox, Muslo_Med, Pantorrilla, Humero, Femur, Estiloideo, Fk_Paciente) VALUES(@Triceps, @Subescapular,
                                         @Biceps, @Pectoral, @Axilar, @Cresta_Lliaca, @Supraespinal, @Abdominal, @Muslo_Frontal, @Pantorrilla_Med,
                                         @Brazo_Relajado, @Brazo_Tension, @Muñeca, @Torax, @Cintura, @Abdomen, @Cadera, @Muslo_Prox, @Muslo_Medio, 
-                                        @Pantorrilla, @Humero, @Femur, @Estiloideo)";
+                                        @Pantorrilla, @Humero, @Femur, @Estiloideo, @Fk)";
                     cmd.Connection = con;
                     cmd.Parameters.Add(new SQLiteParameter("@Triceps", Triceps.Text));
                     cmd.Parameters.Add(new SQLiteParameter("@Subescapular", Subescapular.Text));
@@ -63,6 +64,7 @@ namespace Nutrisoft
                     cmd.Parameters.Add(new SQLiteParameter("@Humero", Humero.Text));
                     cmd.Parameters.Add(new SQLiteParameter("@Femur", Femur.Text));
                     cmd.Parameters.Add(new SQLiteParameter("@Estiloideo", Estiloideo.Text));
+                    cmd.Parameters.Add(new SQLiteParameter("@Fk", fk));
                     con.Open();
 
                     int i = cmd.ExecuteNonQuery();

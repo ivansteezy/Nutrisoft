@@ -23,6 +23,7 @@ namespace Nutrisoft
         public BiometriaHematica()
         {
             InitializeComponent();
+            
         }
     }
 }

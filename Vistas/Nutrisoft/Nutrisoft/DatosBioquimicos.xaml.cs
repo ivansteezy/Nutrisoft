@@ -23,7 +23,6 @@ namespace Nutrisoft
         public DatosBioquimicos()
         {
             InitializeComponent();
-
         }
         private bool flag;
         private void Opciones_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -35,6 +34,7 @@ namespace Nutrisoft
 
         private void Opciones_DropDownClosed(object sender, EventArgs e)
         {
+            
             if (flag) Opcion();
             flag = true;
         }
@@ -72,5 +72,7 @@ namespace Nutrisoft
                     break;
             }
         }
+
+     
     }
 }

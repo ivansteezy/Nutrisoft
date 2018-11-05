@@ -27,6 +27,7 @@
                 <ComboBoxItem>Enzimas Séricas</ComboBoxItem>
             </ComboBox>
         </Grid>
-        <Frame x:Name="DatosFrame" NavigationUIVisibility="Hidden" Margin="0,88,0,0"/>
+        <Frame x:Name="DatosFrame" NavigationUIVisibility="Hidden" Margin="0,88,0,0"></Frame>
+        
     </Grid>
 </Page>

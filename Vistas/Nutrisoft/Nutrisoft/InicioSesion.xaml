@@ -52,7 +52,7 @@
                 </StackPanel>
 
                 <Button Background="#81c41d" Content="Iniciar" Width="80" HorizontalAlignment="Center" Margin= "60"/>
-                <TextBlock HorizontalAlignment="Right" Margin="30 10"><Hyperlink Foreground="Gray" Style="{DynamicResource MaterialDesignSubheadingHyperlink}">Crea una cuenta.</Hyperlink></TextBlock>
+                <TextBlock HorizontalAlignment="Right" Margin="30 10"><Hyperlink Click="CrearCuenta" Foreground="Gray" Style="{DynamicResource MaterialDesignSubheadingHyperlink}">Crea una cuenta.</Hyperlink></TextBlock>
                 <TextBlock HorizontalAlignment="Right" Margin="30 10"><Hyperlink Foreground="Gray" Style="{DynamicResource MaterialDesignSubheadingHyperlink}">¿Has olvidado la contraseña?</Hyperlink></TextBlock>
 
             </StackPanel>

@@ -42,6 +42,7 @@ namespace Nutrisoft
 
         private void Submit(object sender, RoutedEventArgs e)
         {
+            //Checar asunto de contraseña y de correo electronico
             if (Femenino.IsChecked == true)         Sexo = 0;
             else if (Masculino.IsChecked == true)   Sexo = 1;
 
@@ -79,6 +80,13 @@ namespace Nutrisoft
                 }
                 
             }
+        }
+
+        private void Regresar(object sender, RoutedEventArgs e)
+        {
+            InicioSesion Regreso = new InicioSesion();
+            Regreso.Show();
+            this.Close();
         }
     }
 }

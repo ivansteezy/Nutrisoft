@@ -29,6 +29,7 @@ namespace Nutrisoft
 
         private void Guardar(object sender, RoutedEventArgs e)
         {
+            //La parte derecha no recuerdo si entrada o salida
             if (Femenino.IsChecked == true)         Sexo = 0;
             else if (Masculino.IsChecked == true)   Sexo = 1;
 

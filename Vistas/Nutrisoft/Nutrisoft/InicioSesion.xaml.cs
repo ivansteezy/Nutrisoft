@@ -34,5 +34,12 @@ namespace Nutrisoft
         {
             Application.Current.Shutdown();
         }
+
+        private void CrearCuenta(object sender, RoutedEventArgs e)
+        {
+            Registro Crear = new Registro();
+            Crear.Show();
+            this.Close();
+        }
     }
 }
